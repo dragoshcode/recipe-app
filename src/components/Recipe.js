@@ -1,13 +1,18 @@
-import React from 'react'
+import React from 'react';
 
-function Recipe({title, calories, image}) {
+function Recipe({ title, calories, image, ingredients }) {
   return (
-    <div className='recipe-container flex-col'>
+      <div className='recipes flex-col'>
         <h1>{title}</h1>
+        <ul>
+          {ingredients.map((ingredient) => (
+            <li>{ingredient.text}</li>
+          ))}
+        </ul>
+        <img src={image} alt='recipe' />
         <p>Calories: {calories}</p>
-        <img src={image} alt='recipe'/>
-    </div>
-  )
+      </div>
+  );
 }
 
-export default Recipe
+export default Recipe;
