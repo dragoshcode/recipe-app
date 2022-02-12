@@ -8,6 +8,7 @@
 
 html {
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -39,4 +40,27 @@ li {
 
 .grid {
   display: grid;
+}
+
+.App{
+    margin: 2rem 0;
+}
+
+.form{
+    justify-content: center;
+}
+
+.recipe-container{
+    align-items: center;
+    margin-top: 4rem;
+    text-align: center;
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    img{
+        width: 10rem;
+        margin-top: 1rem;
+    }
 }
